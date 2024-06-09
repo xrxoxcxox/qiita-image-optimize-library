@@ -1,5 +1,5 @@
 import { getImages } from "@/libs/getImages";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 interface ImageData {
   src: string;
@@ -15,7 +15,7 @@ const Page = async () => {
     <main className="flex flex-col gap-y-4 p-6">
       <h1 className="text-2xl font-bold">画像最適化のテスト</h1>
       {images.map((image, index) => (
-        <Image
+        <ExportedImage
           key={index}
           src={image.src}
           alt={image.alt}
