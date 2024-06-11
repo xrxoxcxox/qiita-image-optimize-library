@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next-image-export-optimizer && next dev",
-    "build": "next build && next-image-export-optimizer",
+    "dev": "next dev",
+    "build": "next build && time next-export-optimize-images",
     "start": "next start",
     "lint": "next lint"
   },
@@ -22,6 +22,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "eslint-config-prettier": "^9.1.0",
+    "next-export-optimize-images": "^4.5.0",
     "postcss": "^8",
     "prettier": "^3.3.1",
     "prettier-plugin-tailwindcss": "^0.6.2",
